@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.shifttracker.view.LoginScreen"
+        android:label="LoginScreen" >
+        <action
+            android:id="@+id/action_loginScreen_to_profilePage"
+            app:destination="@id/profilePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.example.shifttracker.view.ProfilePage"
+        android:label="ProfilePage" >
+        <action
+            android:id="@+id/action_profilePage_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_profilePage_to_pastShifts"
+            app:destination="@id/pastShifts" />
+    </fragment>
+    <fragment
+        android:id="@+id/pastShifts"
+        android:name="com.example.shifttracker.view.PastShifts"
+        android:label="fragment_past_shifts"
+        tools:layout="@layout/fragment_past_shifts" >
+        <action
+            android:id="@+id/action_pastShifts_to_profilePage"
+            app:destination="@id/profilePage" />
+    </fragment>
+</navigation>

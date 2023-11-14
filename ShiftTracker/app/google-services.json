@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "538943610989",
+    "project_id": "shifttracker-83fcf",
+    "storage_bucket": "shifttracker-83fcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538943610989:android:5dd2193db7aa4f165c1f64",
+        "android_client_info": {
+          "package_name": "com.example.shifttracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO98xQbxtwFEiavpnY62lGew1-rGpKVhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
